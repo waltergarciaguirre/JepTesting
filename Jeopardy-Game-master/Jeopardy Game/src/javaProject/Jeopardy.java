@@ -87,7 +87,7 @@ public class Jeopardy extends JFrame implements ActionListener{
 	
 /*************************************************************************/
 
-	public static void main(String[] args) {
+	public static void  (String[] args) {
 		
 		int input = 0; //Get user input
 				
@@ -953,22 +953,22 @@ public class Jeopardy extends JFrame implements ActionListener{
 			myJeopardy[i].setIcon(im);
 		break;
 		case 1: 
-			ImageIcon ima = new ImageIcon(new ImageIcon("Jeopardy images/starwars.png").getImage().getScaledInstance(
+			ImageIcon ima = new ImageIcon(new ImageIcon("Jeopardy images/software engineering.png").getImage().getScaledInstance(
 					180,100, Image.SCALE_DEFAULT));
 			myJeopardy[i].setIcon(ima);
 		break;
 		case 2: 
-			ImageIcon imag = new ImageIcon(new ImageIcon("src/Jeopardy images/disney.jpg").getImage().getScaledInstance(
+			ImageIcon imag = new ImageIcon(new ImageIcon("src/Jeopardy images/operating systems.jpg").getImage().getScaledInstance(
 					180,100, Image.SCALE_DEFAULT));
 			myJeopardy[i].setIcon(imag);
 		break;
 		case 3: 
-			ImageIcon image = new ImageIcon(new ImageIcon("src/Jeopardy images/SpongeBob.png").getImage().getScaledInstance(
+			ImageIcon image = new ImageIcon(new ImageIcon("src/Jeopardy images/hardware.png").getImage().getScaledInstance(
 					160,90, Image.SCALE_DEFAULT));
 			myJeopardy[i].setIcon(image);
 		break;
 		case 4: 
-			ImageIcon image1 = new ImageIcon(new ImageIcon("src/Jeopardy images/lord.jpg").getImage().getScaledInstance(
+			ImageIcon image1 = new ImageIcon(new ImageIcon("src/Jeopardy images/java.jpg").getImage().getScaledInstance(
 					170,100, Image.SCALE_DEFAULT));
 			myJeopardy[i].setIcon(image1);
 		break;

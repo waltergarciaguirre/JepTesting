@@ -29,6 +29,6 @@ Carter: Next step would be to make the game have a realtime multiplayer aspect s
 Daniel: Work on implementing host features so that users can join the same session. Organization of the jsp.
 
 Luke:
-Elvin:
+Elvin: Continue to modify CSS design as new functioonality is implemented.
 
 

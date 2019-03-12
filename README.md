@@ -18,9 +18,15 @@ questions.
 
 Daniel: Able to research and better understand development of Dynamic Web Applications using Java and the various tools involved (Heroku, Apache Maven, Apache Tomcat, JSP, JavaScript, Servlets). Able to host and manage builds of application using Heroku and the GitHub repo. Made some modifications and updates to the templates, as well as organize some of the structure of the application.
 
+<<<<<<< HEAD
 Luke: Adding questions on Software Engineering, Hardware, and Operating System
 
 Elvin: CSS design modifications. Questions/Answers for Java category.
+=======
+Luke:
+
+Elvin: Base code and CSS design modifications. Questions/Answers for Java category.
+>>>>>>> bbf5317e51507ae042b127f7b23d260ba8e93a2f
 
 # Project Status/Next Step:
 Walter: Next step would be create a "Game Lobby" for users to connect and see the same dynamic page.

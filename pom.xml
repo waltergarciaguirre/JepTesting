@@ -1,15 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.boye</groupId>
-    <artifactId>heroku-tomcat-websocket</artifactId>
+    <groupId>com.borgs</groupId>
+    <artifactId>jeopardy-champ</artifactId>
     <packaging>jar</packaging>
     <version>1.0</version>
-    <name>heroku-tomcat-websocket Maven Webapp</name>
+    <name>jeopardy-champ Maven Webapp</name>
     <url>http://maven.apache.org</url>
     
     <properties>
-        <tomcat.version>8.0.28</tomcat.version>
+        <tomcat.version>8.0.53</tomcat.version>
     </properties>
     
     <dependencies>
@@ -58,13 +58,13 @@
         <dependency>
             <groupId>javax.websocket</groupId>
             <artifactId>javax.websocket-api</artifactId>
-            <version>1.0</version>
+            <version>1.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
     
     <build>
-        <finalName>heroku-tomcat-websocket</finalName>
+        <finalName>jeopardy-champ</finalName>
         
         <plugins>
             <plugin>
@@ -85,7 +85,7 @@
                     <assembleDirectory>target</assembleDirectory>
                     <programs>
                         <program>
-                            <mainClass>com.boye.websocket.Main</mainClass>
+                            <mainClass>com.borgs.websocket.Main</mainClass>
                             <name>webapp</name>
                         </program>
                     </programs>

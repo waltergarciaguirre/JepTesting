@@ -10,6 +10,13 @@ Currently, the project can currently be run/built. However, the current project 
 
 [Jeopardy Champ!](https://jeopardy-champ.herokuapp.com/)
 
+# Sprint Two Review and Retrospective 4/9/19
+Walter: I created the question bank for each statment. This can be found under JeopardyChamp-Project/docs/Question bank or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/docs/Question%20bank.xlsx ), these questions can be seen in the game in the form of buttons for the user to click on. The implementation of these buttons with the question can be seen under JeopardyChamp-Project/src/main/webapp/Game/index.jsp or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/index.jsp )
+
+# Project status and next steps
+Walter: Currently the project is a little behing schedule. My next step would be testing and implementation of multiplayer within the game.
+
+
 # Feature/Accomplishment:
 Walter: Finding a way of hosting our application on a website to be reached by any PC/Phone through Heroku. JeopardyChamp-Project/docs/Hosting Java application.docx
 

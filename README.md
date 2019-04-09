@@ -13,6 +13,8 @@ Currently, the project can currently be run/built. However, the current project 
 # Sprint Two Review and Retrospective 4/9/19
 Walter: I created the question bank for each statment. This can be found under JeopardyChamp-Project/docs/Question bank or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/docs/Question%20bank.xlsx ), these questions can be seen in the game in the form of buttons for the user to click on. The implementation of these buttons with the question can be seen under JeopardyChamp-Project/src/main/webapp/Game/index.jsp or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/index.jsp )
 
+Carter: Did research on how to establish a game lobby to make our webpage dynamic and have multiplayer acess. Tested and implemented the game lobby itself. I modified the JeopardyChamp-Project/src/main/java/com/borgs/websocket/Main.java so the host and join features are added to the socket. My research resources is uploaded and is called GameLobbyResearch.txt. 
+
 # Project status and next steps
 Walter: Currently the project is a little behind schedule. My next step would be testing and implementation of multiplayer within the game.
 

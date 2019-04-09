@@ -10,36 +10,31 @@ Currently, the project can currently be run/built. However, the current project 
 
 [Jeopardy Champ!](https://jeopardy-champ.herokuapp.com/)
 
-# Sprint Two Review and Retrospective 4/9/19
-Walter: I created the question bank for each statment. This can be found under JeopardyChamp-Project/docs/Question bank or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/docs/Question%20bank.xlsx ), these questions can be seen in the game in the form of buttons for the user to click on. The implementation of these buttons with the question can be seen under JeopardyChamp-Project/src/main/webapp/Game/index.jsp or at ( https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/index.jsp )
+## Sprint 2 Review and Retrospective - 4/9/19
 
-Carter: Did research on how to establish a game lobby to make our webpage dynamic and have multiplayer acess. Tested and implemented the game lobby itself. I modified the JeopardyChamp-Project/src/main/java/com/borgs/websocket/Main.java so the host and join features are added to the socket. My research resources is uploaded and is called GameLobbyResearch.txt. 
+### Feature/Accomplishment:
+Walter:  I created the question bank for each statment. This can be found under JeopardyChamp-Project/docs/Question bank or at [Question bank.xlsx](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/docs/Question%20bank.xlsx), these questions can be seen in the game in the form of buttons for the user to click on. The implementation of these buttons with the question can be seen under JeopardyChamp-Project/src/main/webapp/Game/index.jsp or at [index.jsp](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/index.jsp)
 
-# Project status and next steps
-Walter: Currently the project is a little behind schedule. My next step would be testing and implementation of multiplayer within the game.
+Carter: Did research on how to establish a game lobby to make our webpage dynamic and have multiplayer acess. Tested and implemented the game lobby itself. I modified the [GameEndpoint.java](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/java/com/borgs/websocket/GameEndpoint.java) so the host and join features are added to the socket. My research resources is uploaded and is called GameLobbyResearch.txt. 
 
+Daniel: I was able to update the extensions/dependencies to later builds. Dependencies can be found here: [pom.xml](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/pom.xml). I was also able to add a basic main menu with scripting to progress to the lobby and game, but coding for the menu may need to be altered for lobby functionality. The code for the menu can be found at [index.jsp](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/index.jsp) _(see mainmenu. hostgame, joingame, options)_ and [game.js](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/src/main/webapp/Game/game.js) _(see menu functions)_
 
-# Feature/Accomplishment:
-Walter: Finding a way of hosting our application on a website to be reached by any PC/Phone through Heroku. JeopardyChamp-Project/docs/Hosting Java application.docx
+Luke: 
 
-Carter: Figuring out how the interface works along with the dynamic webpage, add changes to jsp text to add the CS history and java
-questions. 
+Elvin: 
 
-Daniel: Able to research and better understand development of Dynamic Web Applications using Java and the various tools involved (Heroku, Apache Maven, Apache Tomcat, JSP, JavaScript, Servlets). Able to host and manage builds of application using Heroku and the GitHub repo. Made some modifications and updates to the templates, as well as organize some of the structure of the application.
+### Project Status/Next Step:
+Walter: My next step would be testing and implementation of multiplayer within the game.
 
-Luke: Adding questions on Software Engineering, Hardware, and Operating System
+Carter:
 
-Elvin: Base code and CSS design modifications. Questions/Answers for Java category.
+Daniel: Fix bugs with menu and work on functionality of lobbies and multiplayer. Work on database implementation.
 
-# Project Status/Next Step:
-Walter: Next step would be create a "Game Lobby" for users to connect and see the same dynamic page.
+Luke: 
 
-Carter: Next step would be to make the game have a realtime multiplayer aspect so all users can play and the game will update in real time. 
+Elvin: 
 
-Daniel: Work on implementing host features so that users can join the same session. Organization of the jsp.
+### Retrospective
 
-Luke: Introduce more features the user would want in the system/more user friendly
-
-Elvin: Continue to modify CSS design as new functioonality is implemented.
-
+[Sprint 2 - Retrospective](https://github.com/cs3398-borgs-bros/JeopardyChamp-Project/blob/master/docs/Borgs_Retrospective%20-%20Sprint%202.pptx)
 

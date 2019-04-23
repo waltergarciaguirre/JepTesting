@@ -9,7 +9,8 @@
     <url>http://maven.apache.org</url>
     
     <properties>
-        <tomcat.version>8.0.53</tomcat.version>
+        <tomcat.version>8.5.40</tomcat.version>
+        <tomcat.version.logging>8.5.2</tomcat.version.logging>
     </properties>
     
     <dependencies>
@@ -22,7 +23,7 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-logging-juli</artifactId>
-            <version>${tomcat.version}</version>
+            <version>${tomcat.version.logging}</version>
         </dependency>
         
         <dependency>
@@ -48,7 +49,7 @@
             <artifactId>tomcat-jsp-api</artifactId>
             <version>${tomcat.version}</version>
         </dependency>
-        <!--critical for WebSocket -->
+        
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-websocket</artifactId>
@@ -61,8 +62,14 @@
             <version>1.1</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>io.javalin</groupId>
+            <artifactId>javalin</artifactId>
+            <version>2.8.0</version>
+        </dependency>
     </dependencies>
-    
+
     <build>
         <finalName>jeopardy-champ</finalName>
         

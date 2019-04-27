@@ -310,3 +310,25 @@ menu.startJoining = function()
 	$('#tojoin').hide();
 	$('#joining').show();
 }
+menu.checkAccount = function()
+{
+	var username = document.getElementById("userName").innerHTML;
+	var password = document.getElementById("password").innerHTML;
+	var validLogin = false;
+	alert("game.js file");
+	
+	if(username == "host")
+	{
+		if(password == "password")
+		{
+			validLogin = true;
+			menu.startHosting();
+			getSessionId();
+		}
+	}
+	else
+	{
+		window.alert("Wrong Login!");
+		validLogin = false;
+	}
+}

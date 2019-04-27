@@ -13,7 +13,8 @@
 <meta name="ROBOTS" content="NOODP" />
 
 <!-- TO BE IMPLEMENTED 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> 
+-->
 
 <!-- Reference to style sheet and JavaScript -->
 <link href="style.css" rel="stylesheet" type="text/css" >
@@ -51,8 +52,8 @@
 							<div id="q00">
 								<button style="inline-block">Who is Tim Berners Lee?</button>
 								  <button style="inline-block">Who is James Gosling?</button>
-								<button style="inline-block">Who is Bjarne Stroustrup?�</button>
-								<button style="inline-block">Who is Guido van Rossum?�</button>
+								<button style="inline-block">Who is Bjarne Stroustrup?</button>
+								<button style="inline-block">Who is Guido van Rossum?</button>
 							</div>
 							<div id="aq00">
 								The inventor of the World Wide Web.
@@ -68,8 +69,8 @@
 							<div id="q01">
 								<button style="inline-block">What is the Single responsibility principle?</button>
 								  <button style="inline-block">What is Interface segregation?</button>
-								<button style="inline-block">What is� Liskov substituion?�</button>
-								<button style="inline-block">What is Let the user access everything?�</button>
+								<button style="inline-block">What is� Liskov substituion?</button>
+								<button style="inline-block">What is Let the user access everything?</button>
 							</div>
 							<div id="aq01">
 								The "L" in SOLID Principles.
@@ -83,9 +84,9 @@
 						<h3>100</h3>
 						<div class="hide">
 							<div id="q02">
-								<button style="inline-block">What is non-volatile memory?�</button>
+								<button style="inline-block">What is non-volatile memory?</button>
 								  <button style="inline-block">What is volatile memory?</button>
-								<button style="inline-block">What is HDD?��</button>
+								<button style="inline-block">What is HDD?</button>
 								<button style="inline-block">What is SDD?</button>
 							</div>
 							<div id="aq02">
@@ -100,10 +101,10 @@
 						<h3>100</h3>
 						<div class="hide">
 							<div id="q03">
-								<button style="inline-block">What is Bark?�</button>
+								<button style="inline-block">What is Bark?</button>
 								  <button style="inline-block">What is Pine?</button>
-								<button style="inline-block">What is Leaf?��</button>
-								<button style="inline-block">What is Oak?�</button>
+								<button style="inline-block">What is Leaf?</button>
+								<button style="inline-block">What is Oak?</button>
 							</div>
 							<div id="aq03">
 								Original name given for java.
@@ -117,7 +118,7 @@
 						<h3>100</h3>
 						<div class="hide">
 							<div id="q04">
-								<button style="inline-block">What is a kernel?�</button>
+								<button style="inline-block">What is a kernel?</button>
 								  <button style="inline-block">What is the bus?</button>
 								<button style="inline-block">What is a device driver?</button>
 								<button style="inline-block">What is a GUI?</button>
@@ -138,9 +139,9 @@
 						<h3>200</h3>
 						<div class="hide">
 							<div id="q10">
-								<button style="inline-block">Who is Watts Humphrey?��</button>
+								<button style="inline-block">Who is Watts Humphrey?</button>
 								  <button style="inline-block">Who is William Petrie?</button>
-								<button style="inline-block">Who is Alan Turing?�</button>
+								<button style="inline-block">Who is Alan Turing?</button>
 								<button style="inline-block">Who is Grady Booch?</button>
 							</div>
 							<div id="aq10">
@@ -156,8 +157,8 @@
 						<div class="hide">
 							<div id="q11">
 								<button style="inline-block">What is Aerospce Engineering?</button>
-								  <button style="inline-block">What is Software Engineering?�</button>
-								<button style="inline-block">What is Mechanical Engineering?�</button>
+								  <button style="inline-block">What is Software Engineering?</button>
+								<button style="inline-block">What is Mechanical Engineering?</button>
 								<button style="inline-block">What is Civil Engineering?</button>
 							</div>
 							<div id="aq11">
@@ -507,40 +508,70 @@
 	<p></p>
 	<input class="submit" type="button" id="joinsubmit" value="Join Game" onclick="menu.joinServer()" />
 	<p></p>
-	<input class="submit" type="button" id="optsubmit" value="Options" onclick="menu.showOptions()" />
+	<!-- <input class="submit" type="button" id="optsubmit" value="Options" onclick="menu.showOptions()" /> -->
 	
 	<div class="clear"></div>
 </div>
 
-<!-- Host  -->
+<!-- Host -->
 <div id="hostgame" class="hide">
 	<h1>Host!</h1>
 	<div id ="tohost">
-		<p>Enter host name:</p>
-		<input type="text" id="gameID" maxlength="6">
-		<input class="submit" type="button" id="ssubmit" value="Host Session" onclick="menu.startHosting();getSessionId();" />
+		<p>Login:</p>
+		<input type="text" id="userName"> </input>
+
+		<input type="text" id="password"> </input>
+		<input class="submit" type="button" id="ssubmit" value="Host Session" onclick="checkAccount()" />
 	</div>
 
 	<div id ="hosting" class="hide">
 		<h2 id="givenID">Room: </h2>
-		<textarea id="hlog" cols="45" rows="5" type="text" readonly></textarea>
+		<img src="pressStart.gif" width ="100%"> </img>
 		<input class="submit" type="button" id="startsubmit" value="Start Game" onclick="game.init()" />
 	</div>
 
 	<div class="clear"></div>
 </div>
+<script>
+	function checkAccount()
+	{
+		var username = document.getElementById("userName").value;
+		var password = document.getElementById("password").value;
+		var validLogin = false;
+		
+		if(username == "host")
+		{
+			if(password == "password")
+			{
+				validLogin = true;
+				menu.startHosting();
+				var sessionID = getSessionId();
+				window.alert(sessionID);
+				
+			}
+			else
+			{
+				window.alert("Wrong Login!");
+			}
+		}
+		else
+		{
+			window.alert("Wrong Login!");
+			validLogin = false;
+		}
+	}
+</script>
 
 <!-- Client  -->
 <div id="joingame" class="hide">
-	<h1>Join Game</h1>
+	<h1 id="clientHeader">Join the game!</h1>
 	<div id ="tojoin">
-			<p>Enter name:</p>
-			<input type="text" id="joinerName">
-			<p>Enter host name:</p>
-			<input type="text" id="joinerID" maxlength="6">
 			<input class="submit" type="button" id="jsubmit" value="Join Session" onclick="menu.startJoining();getClientId();" />
 		</div>
 	<div id ="joining" class="hide">
+		<script type="">
+			document.getElementById("userName").innerText = "Waiting for game to start";
+		</script>
 		<textarea id="jlog" cols="45" rows="5" type="text" readonly></textarea>
 	</div>
 	<div class="clear"></div>

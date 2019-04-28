@@ -575,7 +575,15 @@
 				document.getElementById("clientHeader").innerHTML = "Waiting for game to start";
 			}
 		</script>
-		<textarea id="jlog" cols="45" rows="5" type="text" readonly></textarea>
+		<p align="center">
+			<button id= "userChoiceOne"> Waiting for choice one</button> 
+			<br></br>
+			<button id= "userChoiceTwo"> Waiting for choice two</button>
+			<br></br>
+			<button id= "userChoiceThree"> Waiting for choice three</button>
+			<br></br>
+			<button id= "userChoiceFour"> Waiting for choice four</button>
+		</p>
 	</div>
 	<div class="clear"></div>
 </div>

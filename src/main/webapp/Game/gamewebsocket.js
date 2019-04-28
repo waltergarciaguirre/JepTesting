@@ -39,7 +39,6 @@ function getSessionId() {
 }
 
 function getClientId() {
-    document.getElementById("jlog").innerText = "Attempting to join lobby...\n";
     webSocket.send("JOIN:" + document.getElementById("joinerID").value + ":" + document.getElementById("joinerName").value);
 }
 

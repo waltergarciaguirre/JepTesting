@@ -566,11 +566,14 @@
 <div id="joingame" class="hide">
 	<h1 id="clientHeader">Join the game!</h1>
 	<div id ="tojoin">
-			<input class="submit" type="button" id="jsubmit" value="Join Session" onclick="menu.startJoining();getClientId();" />
+			<input class="submit" type="button" id="jsubmit" value="Join Session" onclick="changingHeaderStart();menu.startJoining();getClientId();" />
 		</div>
 	<div id ="joining" class="hide">
-		<script type="">
-			document.getElementById("userName").innerText = "Waiting for game to start";
+		<script>
+			function changingHeaderStart()
+			{
+				document.getElementById("clientHeader").innerHTML = "Waiting for game to start";
+			}
 		</script>
 		<textarea id="jlog" cols="45" rows="5" type="text" readonly></textarea>
 	</div>
